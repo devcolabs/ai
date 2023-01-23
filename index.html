@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>AI Today</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -25,24 +25,37 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
+  background-image: url('/images/4173631218_A_dream_of_a_robot_looking_away_from_the_camera_at_a_distant_city__photograph__HQ__4k.png');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+  background-image: url("/images/1883089906_A_dream_of_a_robot_looking_away_from_the_camera_with_head_pointed_downward__photograph__HQ__4k.png");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+  background-image: url("/images/3017614832_A_dream_of_a_robot_holding_a_futuristic_camera__photograph__HQ__4k.png");
   min-height: 400px;
 }
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
+
+.prompt 
+{
+  font-style: italic !important;
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+}
+
+.with-prompt 
+{
+  margin-top: 0px;
+}
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
@@ -51,6 +64,8 @@ body, html {
     min-height: 400px;
   }
 }
+
+
 </style>
 </head>
 <body>
@@ -63,8 +78,8 @@ body, html {
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> LINKS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Q&A</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
     </a>
@@ -73,121 +88,9 @@ body, html {
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">LINKS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Q&A</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
-</div>
-
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="https://www.w3schools.com/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://www.w3schools.com/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://www.w3schools.com/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://www.w3schools.com/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="https://www.w3schools.com/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://www.w3schools.com/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="https://www.w3schools.com/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
 </div>
 
@@ -200,45 +103,231 @@ body, html {
   </div>
 </div>
 
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">AI <span class="w3-hide-small">TOMORROW OR</span> TODAY</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Artificial Intelligence</h3>
+  <p class="w3-center"><em>About</em></p>
+  <div class="prompt">GPT3 Prompt: "Write a paragraph length description of the current state of artificial intelligence appropriate for a group of software developers" </div>
+  <p class="with-prompt" >Artificial Intelligence (AI) is a quickly evolving field that has seen remarkable progress in recent years. AI has been extensively used in the development of software applications and has the potential to provide developers with the ability to create more intuitive, powerful and automated applications. AI can be used to automate mundane tasks, improve user experience, and enable more accurate and timely decision-making. AI is also being used to enable machines to learn and improve their performance over time, as well as to create powerful algorithms that can process data more efficiently. AI is being used in many areas, such as natural language processing, computer vision, robotics, and autonomous vehicles, to name a few. AI is likely to become even more integral to software development in the coming years, and developers should stay informed on the latest advances in the field.</p>
+
+    <!-- ChatGpt Description -->
+    <div class="w3-row">
+
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img onclick="onClick(this)" src="/images/3222024311_Human_chatting_with_AI_robot__fantasy_digital_image.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="SD Prompt: Human chatting with AI robot fantasy digital image" width="500" height="333">
+      <div class="prompt">SD Prompt: Human chatting with AI robot fantasy digital image</div>      
+    </div>
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p><h4><i class="fa fa-check-circle w3-margin-right"></i>ChatGPT</h4></p>
+        <div class="prompt">ChatGPT Prompt: What are you?</div>
+        <p class="with-prompt">I am ChatGPT, a large language model trained by OpenAI. I can understand and generate human-like text. You can ask me any question and I will do my best to provide you with a helpful answer.</p>
+    </div>
+  </div>
+
+    <!-- Stable Diffusion Description -->
+    <div class="w3-row w3-margin-top">
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large" >
+        <p><h4><i class="fa fa-check-circle w3-margin-right"></i>Stable Diffusion</h4></p>
+        <div>
+          <div class="prompt">GPT3 Prompt: Give a brief description of Stable Diffusion text to image software</div>
+          <p class="with-prompt">Stable Diffusion Text to Image Software is an AI-powered tool designed to help users create high-quality images from text. It uses natural language processing and deep learning to automatically generate images with captions that match the text input. It can be used for creating social media graphics, infographics, posters, and more. The software is easy to use and can generate high-quality images quickly.</p>
+        </div>
+    </div>
+
+    <div class="w3-col m6 w3-center w3-padding-large">
+        <img onclick="onClick(this)" src="/images/1913995901_Realistic_Photograph_of_two_youg_indian_girls_in_traditional_dress_looking_at_the_camera.png"  class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="SD Prompt: Realistic Photograph of two young indian girls in traditional dress looking at the camera" width="500" height="333">
+        <div class="prompt">SD Prompt: Realistic Photograph of two young indian girls in traditional dress looking at the camera</div>      
+      </div>
+
+    </div>
+
+       <!-- Hugging Face Description -->
+       <div class="w3-row">
+
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img onclick="onClick(this)" src="/images/2031186746_happy_robot__concept_art__matte_painting__HQ__4k.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="SD Prompt: happy robot concept art matte painting (+hugging face logo image)" width="500" height="333">
+          <div class="prompt">SD Prompt: happy robot concept art matte painting (+hugging face logo image)</div>
+        </div>
+    
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+            <p><h4><i class="fa fa-check-circle w3-margin-right"></i>Hugging Face</h4></p>
+            <div class="prompt">GPT3 Prompt: Give a brief description of Hugging face and what it can be used for</div>
+            <p class="with-prompt">Hugging Face is an open-source library of natural language processing (NLP) tools. It can be used to build state-of-the-art models for a variety of NLP tasks such as text generation, question answering, sentiment analysis, text classification, and more. It is built on top of popular deep learning frameworks like TensorFlow, PyTorch, and Keras.</p>
+        </div>
+      </div>
+    
+     
+    <!-- Wolfram Description -->
+    <div class="w3-row w3-margin-top">
+ 
+    <div class="w3-col m6 w3-hide-small w3-padding-large" >
+      <p><h4><i class="fa fa-check-circle w3-margin-right"></i>Wolfram Alpha</h4></p>
+      <div>
+        <div class="prompt">GPT3 Prompt: Give a brief description of Wolfram and how it is different than AI</div>
+        <p class="with-prompt">Wolfram is a computational knowledge engine created by Stephen Wolfram, the founder of Wolfram Research. It is based on Mathematica, a computer algebra system, and the Wolfram Language, a programming language. Unlike AI, which is a branch of computer science that focuses on developing algorithms that can learn from data, Wolfram is a system for symbolic computation and knowledge discovery. It is designed to provide answers to complex questions by combining data, algorithms, and heuristics. Wolfram is a powerful tool for data analysis and simulation, but it is not an AI system.</p>
+      </div>
+  </div>
+
+  <div class="w3-col m6 w3-center w3-padding-large">
+      <img onclick="onClick(this)" src="/images/2733617228_Group_of_robots_in_front_of_a_night_sky_in_the_style_of_Claude_Monet.png"  class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="SD Prompt: Group of robots in front of a night sky in the style of Claude Monet" width="500" height="333">
+      <div class="prompt">SD Prompt: Group of robots in front of a night sky in the style of Claude Monet</div>
+    </div>
+
+    
+</div>
+
+</div>
+
+<!-- Status -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">2.3M</span><br>
+    Jobs Created
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">45T</span><br>
+    Training Data
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">2.3B</span><br>
+    Training Images
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">$432B</span><br>
+    AI Spending
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">LINKS</span>
+  </div>
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">EXPLORE THESE AI RESOURCES</h3>
+  <p class="w3-center"><em>Click the images to visit</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+
+    <div class="w3-col m3">
+      <a href="https://openai.com" target="_blank">
+      <img src="/images/1234783007_Human_chatting_with_AI_robot_fantasy_digital_image.png" style="width:100%"  class="w3-hover-opacity" alt="The mist over the mountains">
+      <div>OpenAI</div>
+    </a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://stablediffusionweb.com/" target="_blank">
+        <img src="/images/138943441_cartoon_of_Bear_in_coboy_hat_riding_a_horse_into_the_sunset_.png" style="width:100%" class="w3-hover-opacity" alt="Coffee beans">
+      <div>Stable Diffusion</div>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://huggingface.co/" target="_blank">
+        <img src="/images/1026166266_photograph_head_shot_of_very_old_woman_very_sad_wearing_a_bonnet.png" style="width:100%" class="w3-hover-opacity" alt="Bear closeup">
+      <div>Hugging Face</div>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://www.wolframalpha.com/" target="_blank">
+        <img src="/images/4177213595_pencil_drawing_of_scientists_pouring_liquids_from_beakers_in_a__lab.png" style="width:100%"  class="w3-hover-opacity" alt="Quiet ocean">
+      <div>Wolfram Alpha</div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <a href="https://dotnet.microsoft.com/en-us/apps/machinelearning-ai/ml-dotnet" target="_blank">
+        <img src="/images/1453043899_bill_gates_posing_with_a_robot_with_snow_in_the_background.png" style="width:100%" class="w3-hover-opacity" alt="The mist">
+      <div>ML.NET</div>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://github.com/jodendaal/OpenAI.Net" target="_blank">
+        <img src="/images/2421093026_art_deco_logo_.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <div>.NET OpenAI API</div>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://github.com/features/copilot" target="_blank">
+        <img src="/images/1751963367_a_monkey_and_a_chipmunk_sitting_at_a_computer.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      <div>GitHub Copilot</div>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://exh.ai/#digital-humans" target="_blank">
+        <img src="/images/2096385968_drawing_of_a_head_inside_a_TV_screen.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      <div>Digital Humans</div>
+    </div>
+    <div hidden>
+    <button  class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+   </div>
+  </div>
+</div>
+
+
+<!-- Quotes -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-section" >
+        <q>Copilot has dramatically accelerated my coding, it's hard to imagine going back to "manual coding". Still learning to use it but it already writes ~80% of my code, ~80% accuracy. I don't even really code, I prompt. & edit.</q>
+        <div>&mdash; Andrej Karpathy, Director of AI at Tesla</div>
+  </div>
+</div>
+
+
+
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+     <span class="w3-xxlarge w3-text-white w3-wide">Q&A</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <h3 class="w3-center">Questions and Answers</h3>
+  <p class="w3-center"><em>Some questions and answers mostly from AI</em></p>
+
 
   <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
+  <div class="w3-panel w3-light-grey">
+    <h3>Q: How was this Website created?</h3>
+    <p>A: It started with a static page template. <br>All of the images and most of the text were generated by AI. <br> It is hosted on GitHub Pages.</p>
   </div>
+
+  <div class="w3-panel w3-light-grey">
+    <h3>Q: What does the "prompt" mean on this site?</h3>
+    <p>A: This is the prompt given to the AI to which then generated the nearby image or text."</p>
+  </div>
+
+  <div class="w3-panel w3-light-grey">
+    <h3>Q: How was this FAQ designed?</h3>
+    <p>A: GPT3 Prompt "write a section of html code for a FAQ styled with w3.css."</p>
+  </div>
+
+  <div class="w3-panel w3-light-grey">
+    <h3>Q: What would Elon say?</h3>
+    <p>A: <a href="https://exh.ai/#digital-humans" target="_blank">See Digital Humans</a>
+      <br>
+      <video controls="true" width="320" height="240"  src="/images/8c10d083-a467-46a5-9d30-dcafdbec850f.mp4"></video></p>
+  </div>
+
+  
+
 </div>
 
 <!-- Footer -->
